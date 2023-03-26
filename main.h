@@ -18,8 +18,8 @@
 #define F_SPACE 16
 
 /* size */
-#define S_SHORT 1
 #define S_LONG 2
+#define S_SHORT 1
 /**
  * struct fmt - struct op
  *
