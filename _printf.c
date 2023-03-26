@@ -36,10 +36,10 @@ int _printf(const char *format, ...)
 			width = get_width(format, &x, list);
 			precision = get_precision(format, &x, list);
 			size = get_size(format, &x);
-			x++;
+			++x;
 			printed = handle_print(format, &x, list, buffer,
 					flags, width, precision, size);
-			if (printed == 1)
+			if (printed == -1)
 				return (-1);
 			printed_chars += printed;
 		}
